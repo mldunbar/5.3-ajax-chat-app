@@ -1,0 +1,11 @@
+<h1>Chat</h1>
+  <form class="former-messages" type="text">
+    {{#each incomingMessages}}
+      <h2>{{incomingMessages.username}}</h2>
+      <p>{{incomingMessages.content}}</p>
+    {{/each}}
+  </form>
+  <form type="text">
+    <input class="enteredText" type="text" name="content" value=""placeholder="Enter text here">
+    <input class="submit-button-chat" type="submit" value="Log text">
+  </form>
